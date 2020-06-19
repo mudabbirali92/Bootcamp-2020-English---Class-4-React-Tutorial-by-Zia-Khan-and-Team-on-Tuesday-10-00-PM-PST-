@@ -57,29 +57,24 @@ function toggling()
 
 }
 
-function colors()
-{
-
-  console.log("Changing colors");
-  //setColor(changes);
-
-}
 
 
 return <div className={listVal? "room lit":"room dark"}>
 
-Room is {listVal ? "Lit" : "Dark"}
+  <center><h1>Created by Mudabbir Ali <strong>Gorillaz</strong></h1></center>
+  <br/>
+  <br/>
+  <center>
+Room is <strong>{listVal ? "Lit" : "Dark"}</strong>
 
 <br/>
-Turns {times}
+
+Turns <strong>{times}</strong>
 <br/>
 <button onClick={toggling}>SWITCH</button>
 <br/>
-<button onClick={colors}
->        
-COLOR
-</button>
 
+</center>
 </div>
   
 // one thing need to be noticed here that we cant directly  access value of listVal but need to
